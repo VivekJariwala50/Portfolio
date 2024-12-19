@@ -1,9 +1,6 @@
 (function () {
   "use strict";
 
-  /**
-   * Apply .scrolled class to the body as the page is scrolled down
-   */
   function toggleScrolled() {
     const selectBody = document.querySelector("body");
     const selectHeader = document.querySelector("#header");
@@ -21,9 +18,6 @@
   document.addEventListener("scroll", toggleScrolled);
   window.addEventListener("load", toggleScrolled);
 
-  /**
-   * Mobile nav toggle
-   */
   const mobileNavToggleBtn = document.querySelector(".mobile-nav-toggle");
 
   function mobileNavToogle() {
@@ -33,9 +27,6 @@
   }
   mobileNavToggleBtn.addEventListener("click", mobileNavToogle);
 
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
   document.querySelectorAll("#navmenu a").forEach((navmenu) => {
     navmenu.addEventListener("click", () => {
       if (document.querySelector(".mobile-nav-active")) {
@@ -44,9 +35,6 @@
     });
   });
 
-  /**
-   * Toggle mobile nav dropdowns
-   */
   document.querySelectorAll(".navmenu .toggle-dropdown").forEach((navmenu) => {
     navmenu.addEventListener("click", function (e) {
       e.preventDefault();
@@ -56,9 +44,6 @@
     });
   });
 
-  /**
-   * Preloader
-   */
   const preloader = document.querySelector("#preloader");
   if (preloader) {
     window.addEventListener("load", () => {
@@ -66,9 +51,6 @@
     });
   }
 
-  /**
-   * Scroll top button
-   */
   let scrollTop = document.querySelector(".scroll-top");
 
   function toggleScrollTop() {
@@ -89,9 +71,6 @@
   window.addEventListener("load", toggleScrollTop);
   document.addEventListener("scroll", toggleScrollTop);
 
-  /**
-   * Animation on scroll function and init
-   */
   function aosInit() {
     AOS.init({
       duration: 600,
@@ -102,9 +81,6 @@
   }
   window.addEventListener("load", aosInit);
 
-  /**
-   * Init typed.js
-   */
   const selectTyped = document.querySelector(".typed");
   if (selectTyped) {
     let typed_strings = selectTyped.getAttribute("data-typed-items");
@@ -118,9 +94,6 @@
     });
   }
 
-  /**
-   * Init swiper sliders
-   */
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
       let config = JSON.parse(
@@ -137,16 +110,10 @@
 
   window.addEventListener("load", initSwiper);
 
-  /**
-   * Initiate glightbox
-   */
   const glightbox = GLightbox({
     selector: ".glightbox",
   });
 
-  /**
-   * Init isotope layout and filters
-   */
   document.querySelectorAll(".isotope-layout").forEach(function (isotopeItem) {
     let layout = isotopeItem.getAttribute("data-layout") ?? "masonry";
     let filter = isotopeItem.getAttribute("data-default-filter") ?? "*";
@@ -187,9 +154,6 @@
       });
   });
 
-  /**
-   * Correct scrolling position upon page load for URLs containing hash links.
-   */
   window.addEventListener("load", function (e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
@@ -205,9 +169,6 @@
     }
   });
 
-  /**
-   * Navmenu Scrollspy
-   */
   let navmenulinks = document.querySelectorAll(".navmenu a");
 
   function navmenuScrollspy() {
@@ -400,6 +361,37 @@ const projectData = {
     detailsTitle: "Cooking Healthy Food",
     detailsDescription:
       "A visually appealing Cooking Healthy Food site crafted as an engaging landing page, leveraging clean HTML, CSS, and JavaScript, enhanced with seamless animations to deliver a modern, interactive, and professional user experience.",
+  },
+  stock_market_trends: {
+    title: "Stock Market Trends",
+    summary:
+      "This experimental project leverages the Alpha Vantage API to extract, transform, and analyze stock market data through SQL queries, uncovering trends, price fluctuations, and volume insights.",
+    images: ["assets/img/portfolio/stock_market_trends.jpg"],
+    info: {
+      category: "Data Analytics",
+      technologies: "SQL, Microsoft SQL Server, Python, Pandas",
+      url: "https://github.com/VivekJariwala50/Stock_Market_Trends",
+    },
+    detailsTitle: "Stock Market Trends",
+    detailsDescription:
+      "This project is built using Python, Pandas, MS SQL, and SQL to fetch, process, and analyze stock market data from the Alpha Vantage API, providing valuable insights into market trends and fluctuations.",
+  },
+  companyLinker: {
+    title: "Company Linker",
+    summary:
+      "I created a Company Linker tool using HTML, CSS, JavaScript, ExcelJS, and the Google Sheets API to manage due sheets for finance companies.",
+    images: [
+      "assets/img/portfolio/company-linker.png",
+      "assets/img/portfolio/company-linker-2.png",
+    ],
+    info: {
+      category: "Frontend Development",
+      technologies: "HTML, CSS, Javascript",
+      url: "https://company-linker.netlify.app",
+    },
+    detailsTitle: "Stock Market Trends",
+    detailsDescription:
+      "For a finance company, I created a tool named Company Linker, built using different technologies such as HTML, CSS, JavaScript, ExcelJS, and Google Sheets API needed by the company. The tool provides two methods for uploading due sheets: one through a file input, which enables the user to upload Excel files into the platform, and the other through the input of a Google Sheets link, which makes it easier to import files maintained in the Google Sheets online spreadsheets. This flexibility means that controlling of due sheets is much easier out of which data handling is enhanced and the over all financial control for the company is a great boost.",
   },
 };
 
