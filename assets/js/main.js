@@ -389,7 +389,7 @@ const projectData = {
       technologies: "HTML, CSS, Javascript",
       url: "https://company-linker.netlify.app",
     },
-    detailsTitle: "Stock Market Trends",
+    detailsTitle: "Company Linker",
     detailsDescription:
       "For a finance company, I created a tool named Company Linker, built using different technologies such as HTML, CSS, JavaScript, ExcelJS, and Google Sheets API needed by the company. The tool provides two methods for uploading due sheets: one through a file input, which enables the user to upload Excel files into the platform, and the other through the input of a Google Sheets link, which makes it easier to import files maintained in the Google Sheets online spreadsheets. This flexibility means that controlling of due sheets is much easier out of which data handling is enhanced and the over all financial control for the company is a great boost.",
   },
