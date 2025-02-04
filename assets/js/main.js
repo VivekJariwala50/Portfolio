@@ -247,7 +247,7 @@ const projectData = {
     ],
     info: {
       category: "Frontend Development",
-      technologies: "Next.js",
+      technologies: "Next.js, Typescript",
       url: "https://anxietychecklist.com",
     },
     detailsTitle: "Anxiety Checklist",
