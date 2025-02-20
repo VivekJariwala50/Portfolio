@@ -376,6 +376,20 @@ const projectData = {
     detailsDescription:
       "This project is built using Python, Pandas, MS SQL, and SQL to fetch, process, and analyze stock market data from the Alpha Vantage API, providing valuable insights into market trends and fluctuations.",
   },
+  diabetes_progression_analysis_Dashboard: {
+    title: "Diabetes Progression Analysis & Dashboard",
+    summary:
+      "This project uses Python, Pandas and Matplotlib to perform exploratory data analysis on diabetes progression, identifying key features, outliers, and correlations. The findings are visualized through an interactive Tableau dashboard, offering insights into diabetes trends and progression.",
+    images: ["assets/img/portfolio/diabetes-dashboard.jpg"],
+    info: {
+      category: "Data Analytics",
+      technologies: "Python, Matplotlib, Pandas, MS Excel, Tableau",
+      url: "https://github.com/VivekJariwala50/Diabetes-Progression-Analysis",
+    },
+    detailsTitle: "Diabetes Progression Analysis & Dashboard",
+    detailsDescription:
+      "This project utilizes Python, Pandas, and Matplotlib to perform an in-depth exploratory data analysis (EDA) on diabetes progression data. The analysis identifies key features, detects outliers, uncovers potential data issues, and examines correlations between various factors affecting diabetes. These insights are then visualized in an interactive Tableau dashboard, providing a comprehensive view of diabetes trends, progression patterns, and influencing variables.",
+  },
   companyLinker: {
     title: "Company Linker",
     summary:
