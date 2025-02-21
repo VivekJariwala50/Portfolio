@@ -390,6 +390,20 @@ const projectData = {
     detailsDescription:
       "This project utilizes Python, Pandas, and Matplotlib to perform an in-depth exploratory data analysis (EDA) on diabetes progression data. The analysis identifies key features, detects outliers, uncovers potential data issues, and examines correlations between various factors affecting diabetes. These insights are then visualized in an interactive Tableau dashboard, providing a comprehensive view of diabetes trends, progression patterns, and influencing variables.",
   },
+  beta_university_annual_fund_database: {
+    title: "Beta University Annual Fund Database",
+    summary:
+      "This project utilizes Oracle SQL to build a secure and efficient database system for managing Beta University's Annual Fund donations and events.",
+    images: ["assets/img/portfolio/beta-university-annual-fund-lg.jpg"],
+    info: {
+      category: "Data Analytics",
+      technologies: "Oracle, SQL, MS Visio, MS Excel",
+      url: "https://github.com/VivekJariwala50/Beta-University-Annual-Fund",
+    },
+    detailsTitle: "Beta University Annual Fund Database",
+    detailsDescription:
+      "This project utilizes Oracle SQL and database management techniques to develop a structured and secure system for Beta University's Annual Fund. It focuses on designing relational schemas, normalizing data, and implementing security features to manage donor contributions, pledges, and fundraising events efficiently. The system generates automated reports, tracks payments, and provides insights into donor engagement. Through advanced data modeling and analytics, this project enhances fundraising operations, ensuring accuracy, transparency, and streamlined financial tracking.",
+  },
   companyLinker: {
     title: "Company Linker",
     summary:
